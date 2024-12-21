@@ -1,0 +1,91 @@
+# Welcome to Ing Davann
+ 
+Hello, world!
+
+## Hello MDX
+ 
+import { useState } from 'react'
+ 
+export function Counter({ children }) {
+  const [count, setCount] = useState(0)
+  return (
+    <button className="bg-red-300 text-white p-2 rounded-md mt-3 mb-3" onClick={() => setCount(prev => prev + 1)}>
+      {children}
+      {count}
+    </button>
+  )
+}
+ 
+<Counter>**Clicks**: </Counter>
+
+[//]: # (This is task list)
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+[//]: # (This is tables)
+
+| Syntax        | Description |   Test Text | 
+| :------------ | :---------: | ----------: | 
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
+
+
+Visit https://nextjs.org.
+
+import { Cards, Callout, Steps, Tabs  } from 'nextra/components';
+import { CiWarning } from "react-icons/ci";
+import { TbCircleNumber1Filled } from "react-icons/tb";
+import { TiTabsOutline } from "react-icons/ti";
+
+<>
+    <Cards>
+    <Cards.Card
+        icon={<CiWarning />}
+        title="Callout"
+        href="/docs/guide/built-ins/callout"
+    />
+    <Cards.Card
+        icon ={<TiTabsOutline />}
+        title="Tabs"
+        href="/docs/guide/built-ins/tabs"
+    />
+    <Cards.Card
+        icon={<TbCircleNumber1Filled />}
+        title="Steps"
+        href="/docs/guide/built-ins/steps"
+    />
+    </Cards>
+
+    <Callout emoji="👾">
+    **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+    Nishikado.
+    </Callout>
+
+    ## Getting Started
+ 
+    Here is some description.
+    
+    <Steps>
+    ### Step 1
+    
+    Contents for step 1.
+    
+    ### Step 2
+    
+    Contents for step 2.
+    </Steps>
+
+    <Tabs items={['pnpm', 'npm', 'yarn']}>
+    <Tabs.Tab>**pnpm**: Fast, disk space efficient package manager.</Tabs.Tab>
+    <Tabs.Tab>**npm** is a package manager for the JavaScript programming language.</Tabs.Tab>
+    <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+    </Tabs>
+</>
+
+
+
+
+
