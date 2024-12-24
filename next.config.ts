@@ -13,5 +13,6 @@ const withNextra = nextra({
 
 export default withNextra({
   nextConfig,
+  output: 'standalone',
   
 })

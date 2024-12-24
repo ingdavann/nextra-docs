@@ -1,5 +1,6 @@
 import type { DocsThemeConfig } from "nextra-theme-docs";
 
+
 const config: DocsThemeConfig = {
   logo: <span>Davann</span>,
   project: {
